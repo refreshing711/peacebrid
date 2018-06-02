@@ -22,15 +22,15 @@ gulp.task("scss" ,function(){
 })
 
 
-gulp.task("js",function(){
-	gulp.src("src/js/*.js")
-	.pipe(uglify())
-	.pipe(rename({"suffix":".min"}))
-	.pipe(concat("main.min.js"))
-	.pipe(gulp.dest("js"))
-})
+//gulp.task("js",function(){
+//	gulp.src("src/js/*.js")
+//	.pipe(uglify())
+//	.pipe(rename({"suffix":".min"}))
+//	.pipe(concat("main.min.js"))
+//	.pipe(gulp.dest("js"))
+//})
 
 gulp.task("watch",function(){
-	gulp.watch(["src/scss/*.scss","src/js/*.js"],["scss","js"])		
+	gulp.watch(["src/scss/*.scss"],["scss"])		
 })
 

@@ -5,8 +5,8 @@
 		<title></title>
 				<link rel="stylesheet" href="css/index.min.css" />
 				<link rel="stylesheet" href="css/slide.css" />
-				<script src="js/jquery-1.11.3.js"></script>
-					
+				<script src="js/jquery-1.11.3.js"> </script>
+				<script src="js/slide.js"></script>
 	</head>
 	<body>
 		<!--网页头部-->
@@ -14,7 +14,7 @@
 			<div class="head-topbg">
 				<div class="head-top">
 			<ul>
-				<li><a href="">微信</a></li>
+				<li><a href="">微信</a><img src="image/wxtop.jpg" alt="" style="display: none;"/></li>
 				<li><a href="">收藏太平鸟pb89.com</a></li>
 			</ul>
 			<ul>
@@ -50,8 +50,9 @@
 		
 		<div class="head-navbg">
 		  <div class="head-nav">
+		  	<div id="mark"></div>
 			<ul>
-				<li><a href="">首页</a></li>
+				<li class="notcheck"><a href="">首页</a></li>
 				<li><a href="">女装</a>
 					<div class="head-nav-mainbg">
 						<div class="head-nav-main">
@@ -132,7 +133,7 @@
 							<div class="dl">
 								<dl>
 									<dt>上装</dt>
-									<dd><a href="">雪纺衫/蕾丝衫</a><a href="">卫衣/a> 针织衫</dd>
+									<dd><a href="">雪纺衫/蕾丝衫</a><a href="">卫衣</a> <a>针织衫</a></dd>
 								</dl>
 								<dl>
 									<dt>下装</dt>
@@ -211,6 +212,7 @@
 					</div>
 				</li>
 			</ul>
+			
 			<div class="shopcar">
 				<img src="image/cart-angle.png" alt="" />
 				<a href="">购物车(<span>0</span>)</a>
@@ -224,7 +226,7 @@
 	<div id="banner" class="slide">
 		
 	</div>
-	<script src="js/slide.js"></script>
+	
 	<script>
 		new Slide($("#banner"), [
 	{"img":"image/banner1.png", "title":"标题1", "href":"http://www.baidu.com"},
@@ -240,16 +242,16 @@
 		<div class="tab">
 			<div class="tab-ul">
 				<ul>
-					<li><a href=""><img src="image/1_03.jpg" alt="" /><span><img src="image/1_09.jpg" alt="" /></span><i><img src="image/2_09.jpg"/></i></a></li>
-					<li><a href=""><img src="image/1_05.jpg" alt="" /><span><img src="image/1_10.jpg" alt="" /></span><i><img src="image/2_10.jpg"/></i></a></li>
-					<li><a href=""><img src="image/1_07.jpg" alt="" /><span><img src="image/1_11.jpg" alt="" /></span><i><img src="image/2_11.jpg"/></i></a></li>
+					<li><a href=""><img src="image/1_03.jpg" alt="" class="img"/><span><img src="image/1_09.jpg" alt="" /></span><i><img src="image/2_09.jpg"/></i></a></li>
+					<li><a href=""><img src="image/1_05.jpg" alt="" class="img"/><span><img src="image/1_10.jpg" alt="" /></span><i><img src="image/2_10.jpg"/></i></a></li>
+					<li><a href=""><img src="image/1_07.jpg" alt="" class="img"/><span><img src="image/1_11.jpg" alt="" /></span><i><img src="image/2_11.jpg"/></i></a></li>
 				</ul>
 			</div>
 			<div class="tab-main">
 				<h3><a href=""></a></h3>
 				<ul>
-					<li>女装
-						<ul>
+					<li class="tab-main-li">女装
+						<ul class="checked">
 							<li>
 								<a href=""><img src="image/s_220(4).jpg"/></a>
 								<span>蝙蝠油淑女上衣<b>￥239</b></span></li>
@@ -495,3 +497,4 @@
 	
 	</body>
 </html>
+<script src="js/index.js"></script>

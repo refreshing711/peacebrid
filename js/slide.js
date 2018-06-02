@@ -1,4 +1,9 @@
-class Slide{
+//define(function(){
+//	return{
+//		slide:function(id){
+			
+			
+			class Slide{
 	constructor(box, data, width, height, index, ms, dir, btnSize=30){
 		this.box = box;
 		this.data = data;
@@ -143,4 +148,15 @@ Slide.prototype.auto = function(){
 		}, that.ms); 
 	});	
 }
+
+
+
+
+//		}
+//	}
+//})
+
+
+
+
 

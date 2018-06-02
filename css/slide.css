@@ -1,6 +1,10 @@
+html,body{
+	width:100%;
+}
 .slide{
 	position: relative;
 	overflow: hidden;
+	width:100%;
 }
 .slide *{
 	margin: 0;
@@ -13,10 +17,11 @@
 	position: absolute;
 }
 .slide>ul{
-
+	width:500%;
 }
 .slide>ul>li{
 	float: left;
+	width:25%;
 }
 .slide>ul>li a{
 	
