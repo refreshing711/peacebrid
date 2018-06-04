@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>太平鸟官方唯一网上购物商城</title>
 				<link rel="stylesheet" href="css/index.min.css" />
-				<link rel="stylesheet" href="css/slide.css" />
+				<link rel="stylesheet" type="text/css" href="css/slide.css"/>
 				<script src="js/jquery-1.11.3.js"> </script>
 				<script src="js/slide.js"></script>
 	</head>
@@ -63,7 +63,7 @@
 							<div class="dl">
 								<dl>
 									<dt>外套</dt>
-									<dd><a href="">风衣夹克</a><a href="">西装</a><a href="">便服</a></dd>
+									<dd><a href="list.html">风衣夹克</a><a href="">西装</a><a href="">便服</a></dd>
 								</dl>
 								<dl>
 									<dt>裙装</dt>
@@ -223,35 +223,56 @@
 		</div>
 		
 <!--网页banner-->
-	<div id="banner" class="slide">
-		
+	<div id="banner">
+		 <div id="show" rel="autoPlay">
+
+      <div class="img">
+
+          <span>
+
+              <a href="http://www.jq22.com" target="_blank"><img src="image/banner1.png" /></a>
+
+              <a href="http://www.jq22.com" target="_blank"><img src="image/banner2.png" /></a>
+
+              <a href="http://www.jq22.com" target="_blank"><img src="image/banner3.png" /></a>
+
+              <a href="http://www.jq22.com" target="_blank"><img src="image/banner4.png" /></a>
+
+          </span>
+
+        <div class="masks mk1"></div>
+
+        <div class="masks mk2"></div>
+
+      </div>
+
+    </div>
 	</div>
 	
-	<script>
-		new Slide($("#banner"), [
-	{"img":"image/banner1.png", "title":"标题1", "href":"http://www.baidu.com"},
-	{"img":"image/banner2.png", "title":"标题2", "href":"http://www.163.com"},
-	{"img":"image/banner3.png", "title":"标题3", "href":"http://www.sina.com.cn"},
-	{"img":"image/banner4.png", "title":"标题4", "href":"http://www.1000phone.com"}
-],1519,567, 2, 3000, "left", 40).init();
 
-	</script>
 	
 <!--网页内容-->
 	<div class="tabbg">
 		<div class="tab">
 			<div class="tab-ul">
 				<ul>
-					<li><a href=""><img src="image/1_03.jpg" alt="" class="img"/><span><img src="image/1_09.jpg" alt="" /></span><i><img src="image/2_09.jpg"/></i></a></li>
-					<li><a href=""><img src="image/1_05.jpg" alt="" class="img"/><span><img src="image/1_10.jpg" alt="" /></span><i><img src="image/2_10.jpg"/></i></a></li>
-					<li><a href=""><img src="image/1_07.jpg" alt="" class="img"/><span><img src="image/1_11.jpg" alt="" /></span><i><img src="image/2_11.jpg"/></i></a></li>
+					<li><a href=""><img src="image/1_03.jpg" alt="" class="img"/><img src="image/1_03.jpg" class="clone" alt="" /><span><img src="image/1_09.jpg" alt="" /></span><i><img src="image/2_09.jpg"/></i></a></li>
+					<li><a href=""><img src="image/1_05.jpg" alt="" class="img"/><img src="image/1_05.jpg" alt="" class="clone"/><span><img src="image/1_10.jpg" alt="" /></span><i><img src="image/2_10.jpg"/></i></a></li>
+					<li><a href=""><img src="image/1_07.jpg" alt="" class="img"/><img src="image/1_07.jpg" alt="" class="clone"/><span><img src="image/1_11.jpg" alt="" /></span><i><img src="image/2_11.jpg"/></i></a></li>
 				</ul>
 			</div>
 			<div class="tab-main">
 				<h3><a href=""></a></h3>
 				<ul>
-					<li class="tab-main-li">女装
-						<ul class="checked">
+					<li class="tab-main-li">女装</li>
+					<li>乐町</li>
+					<li>男装</li>
+					<li>童装</li>
+					<li>MG</li>
+				</ul>				
+			</div>
+			<div class="null">
+				<ul class="none">
 							<li>
 								<a href=""><img src="image/s_220(4).jpg"/></a>
 								<span>蝙蝠油淑女上衣<b>￥239</b></span></li>
@@ -266,8 +287,6 @@
 								<span>蝙蝠油淑女上衣<b>￥239</b></span></li>
 								
 						</ul>
-					</li>
-					<li>乐町
 						<ul>
 							<li>
 								<a href=""><img src="image/s_220(2).jpg"/></a>
@@ -288,8 +307,6 @@
 								<a href=""><img src="image/s_220(6).jpg"/></a>
 								<span>蝙蝠油淑女上衣<b>￥239</b></span></li>
 						</ul>
-					</li>
-					<li>男装
 						<ul>
 							<li>
 								<a href=""><img src="image/s_220(6).jpg"/></a>
@@ -312,11 +329,9 @@
 								<li>
 								<a href=""><img src="image/s_220(2).jpg"/></a>
 								<span>蝙蝠油淑女上衣<b>￥239</b></span></li>
-						</ul>
-						
-					</li>
-					<li>童装
-						<ul>
+			</ul>
+			
+			<ul>
 							<li>
 								<a href=""><img src="image/s_220(4).jpg"/></a>
 								<span>蝙蝠油淑女上衣<b>￥239</b></span></li>
@@ -327,9 +342,7 @@
 								<a href=""><img src="image/s_220(6).jpg"/></a>
 								<span>蝙蝠油淑女上衣<b>￥239</b></span></li>		
 						</ul>
-					</li>
-					<li>MG
-						<ul>
+				<ul>
 							<li>
 								<a href=""><img src="image/s_220(4).jpg"/></a>
 								<span>蝙蝠油淑女上衣<b>￥239</b></span></li>
@@ -352,16 +365,22 @@
 								<a href=""><img src="image/s_220(5).jpg"/></a>
 								<span>蝙蝠油淑女上衣<b>￥239</b></span></li>
 						</ul>
-					</li>
-				</ul>
+			
+			
 			</div>
-			<div class="null"></div>
 			<h3 class="name"><a href=""></a></h3>
 			
-			<!--热销潮品轮播图-->
-			<div class="tab-hot">
-				
+			
+			<div id="tab-hot">
+				<a href=""><img src="image/r1(2).jpg"/></a>
+				<a href=""><img src="image/r2(2).jpg"/></a>
+				<a href=""><img src="image/r3(2).jpg"/></a>
+				<a href=""><img src="image/r4(2).jpg"/></a>
+				<a href=""><img src="image/r5(2).jpg"/></a>
 			</div>
+			
+			
+			
 		</div>
 	</div>
 
@@ -370,6 +389,45 @@
 <!--网页内容-->	
 	<div class="mainbg">
 		<div class="main">
+			
+			
+			
+			
+			<div class="main-head">
+				<h3><a href=""></a></h3>
+				<div class="main-auto">
+				<ul>
+					<li><a href="">秋季新品</a></li>
+					<li><a href="">连衣裙</a></li>
+					<li><a href="">衬衫</a></li>
+					<li><a href="">蕾丝/雪纺</a></li>
+					<li><a href="">外套</a></li>
+					<li><a href="">针织衫</a></li>
+					<li><a href="">半身裙</a></li>
+					<li><a href="">裤装</a></li>
+				</ul>
+				</div>
+				
+			</div>
+			<div id="main-slide1" class="slide">
+				
+			</div>
+			
+			
+			<div class="main-ul">
+				<ul>
+					<li><a href=""><img src="image/index---0826_26.jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-11.jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-14.jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-15.jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-11(3).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_27.jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_28-17.jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_28.jpg"/></a></li>
+				</ul>
+			</div>
+			
+			
 			<div class="main-head">
 				<h3><a href=""></a></h3>
 				<div class="main-auto">
@@ -385,21 +443,135 @@
 				</ul>
 				</div>
 			</div>
-			<div class="main-slide">
-				<img src="image/1467767936960962368.jpg" alt="" />
+			<div id="main-slide2" class="slide">
+				
 			</div>
 			<div class="main-ul">
 				<ul>
-					<li><a href=""><img src="image/index---0826_26.jpg"/></a></li>
-					<li><a href=""><img src="image/index---0826_26-11.jpg"/></a></li>
-					<li><a href=""><img src="image/index---0826_26-14.jpg"/></a></li>
-					<li><a href=""><img src="image/index---0826_26-15.jpg"/></a></li>
-					<li><a href=""><img src="image/index---0826_26-11(3).jpg"/></a></li>
-					<li><a href=""><img src="image/index---0826_27.jpg"/></a></li>
-					<li><a href=""><img src="image/index---0826_28-17.jpg"/></a></li>
-					<li><a href=""><img src="image/index---0826_28.jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26(2).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-11(2).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-14(2).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-15(2).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_27(2).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_27(2).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_28(2).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_27-16.jpg"/></a></li>
 				</ul>
 			</div>
+			
+			<div class="main-head">
+				<h3><a href=""></a></h3>
+				<div class="main-auto">
+				<ul>
+					<li><a href="">秋季新品</a></li>
+					<li><a href="">连衣裙</a></li>
+					<li><a href="">衬衫</a></li>
+					<li><a href="">蕾丝/雪纺</a></li>
+					<li><a href="">外套</a></li>
+					<li><a href="">针织衫</a></li>
+					<li><a href="">半身裙</a></li>
+					<li><a href="">裤装</a></li>
+				</ul>
+				</div>
+				
+				
+				
+				
+			
+			</div>
+			<div id="main-slide3" class="slide">
+				
+			</div>
+			
+			
+			<div class="main-ul">
+				<ul>
+					<li><a href=""><img src="image/index---0826_26(3).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-11(3).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-14(3).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-15(3).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_27(3).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_27-16(2).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_28(3).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_28-17(3).jpg"/></a></li>
+				</ul>
+			</div>
+			
+			
+			<div class="main-head">
+				<h3><a href=""></a></h3>
+				<div class="main-auto">
+				<ul>
+					<li><a href="">秋季新品</a></li>
+					<li><a href="">连衣裙</a></li>
+					<li><a href="">衬衫</a></li>
+					<li><a href="">蕾丝/雪纺</a></li>
+					<li><a href="">外套</a></li>
+					<li><a href="">针织衫</a></li>
+					<li><a href="">半身裙</a></li>
+					<li><a href="">裤装</a></li>
+				</ul>
+				</div>
+			</div>
+			<div id="main-slide4" class="slide">
+				
+			</div>
+			
+			
+			<div class="main-ul">
+				<ul>
+					<li><a href=""><img src="image/1.jpg"/></a></li>
+					<li><a href=""><img src="image/2.jpg"/></a></li>
+					<li><a href=""><img src="image/3.jpg"/></a></li>
+					<li><a href=""><img src="image/4.jpg"/></a></li>
+					<li><a href=""><img src="image/5.jpg"/></a></li>
+					<li><a href=""><img src="image/6.jpg"/></a></li>
+					<li><a href=""><img src="image/7.jpg"/></a></li>
+					<li><a href=""><img src="image/8.jpg"/></a></li>
+				</ul>
+			</div>
+			
+			
+			<div class="main-head">
+				<h3><a href=""></a></h3>
+				<div class="main-auto">
+				<ul>
+					<li><a href="">秋季新品</a></li>
+					<li><a href="">连衣裙</a></li>
+					<li><a href="">衬衫</a></li>
+					<li><a href="">蕾丝/雪纺</a></li>
+					<li><a href="">外套</a></li>
+					<li><a href="">针织衫</a></li>
+					<li><a href="">半身裙</a></li>
+					<li><a href="">裤装</a></li>
+				</ul>
+				</div>
+			</div>
+			<div id="main-slide5" class="slide">
+				
+			</div>
+			
+			
+			<div class="main-ul">
+				<ul>
+					<li><a href=""><img src="image/index---0826_26(4).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-11(4).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-14(4).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_26-15(4).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_27(4).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_27-16(4).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_28(4).jpg"/></a></li>
+					<li><a href=""><img src="image/index---0826_28-17(4).jpg"/></a></li>
+				</ul>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
 		</div>
 	</div>
 	
@@ -469,7 +641,8 @@
 				</li>
 				<li>
 					<dl>
-						<dd><a href=""><img src="image/footer-qr.png" alt="" /></a></dd>
+						<dd  class="code"><a href=""><img src="image/footer-qr.png" alt="" />
+						<img src="image/footer-qrn.png" alt="" /></a></dd>
 						<dd><a href="">扫描二维码</a></dd>
 						<dd><a href="">关注微信</a></dd>
 				</li>
@@ -494,7 +667,7 @@
 		
 	</div>
 </div>	
-	
+<script src="js/ft-carousel.min.js"></script>
+<script src="js/index.js"></script>	
 	</body>
 </html>
-<script src="js/index.js"></script>

@@ -45,6 +45,7 @@ html,body{
 /*	border-radius: 50%;*/
 	display: block;
 	cursor: pointer;
+	display: none;
 }
 .slide>p{
 	width: 20px;
