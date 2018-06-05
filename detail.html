@@ -7,6 +7,10 @@
 	<body>
 		<link rel="stylesheet" href="css/detail.min.css" />
 		<script src="js/jquery-1.11.3.js"></script>
+			<script src="js/jquery.cookie.js"></script>	
+	<script src="js/jquery.fly.js"></script>
+		
+		<script src="js/requestAnimationFrame.js"></script>
 		<!--网页头部-->
 		<div class="header">
 			<div class="head-topbg">
@@ -219,7 +223,8 @@
 			
 			<div class="shopcar">
 				<img src="image/cart-angle.png" alt="" />
-				<a href="">购物车(<span>0</span>)</a>
+				<input type="button" value="购物车(0)" id="buy"/>
+				<!--<a href="">购物车(<span  id="buy" value="0">0</span>)</a>-->
 			</div>
 		</div>
 		<div class="mark"></div>
@@ -227,21 +232,21 @@
 		</div>
 		
 <div class="detail-mainbg">
-	<div class="detail-main">
+	<div class="detail-main"  data-good-id="sp1">
 		<div class="detail-nav">
 			<a href="">首页</a>>女装>外套>风衣夹克
-			<span>商品编号A4AA61A02</span>
+			<span class="shopnum">商品编号 : A4AA61A02</span>
 		</div>
 		<div class="glass">
 			<div class="glass-left">
 				<div class="glass-main">
 					<p><img src="image/detail/goods_logo_women.jpg" alt="" /></p>
 					<div id="small">
-    <img src="image/detail/01_480.jpg" alt="" width="100%">
+    <img src="image/detail/01_480.jpg" class="shopimg" alt="" width="100%">
     <div id="move"></div>
 </div>
 
-<div id="big">
+<div id="big" style="z-index: 20;">
     <img id="bigPic" src="image/detail/01_480.jpg" alt="" style="position:absolute">
 </div>
 
@@ -260,19 +265,28 @@
 					<ul>
 						<li>官网价：￥</li>
 						<li>629</li>
-						<li><i></i></li>
+						<li><i></i>
+							<div class="yh">
+								<i></i>
+								<div>登录后查看会员价</div>
+								<div><span>普通会员</span><b>￥629</b></div>
+								<div><span>	VIP会员</span><b>￥554</b></div>
+								<a href="">如何享受会员价</a>
+							</div>
+						</li>
 					</ul>
 					<br />
 					<p>专柜价：￥<del>1899</del></p>
-					<span>赠送魔法币<b>629</b>个<img src="image/detail/what.png" alt="" /></span>
+					<span>赠送魔法币<b>629</b>个<i><img src="image/detail/mfb_t2.png" alt="" /></i>
+					</span>
 				</div>
 				<p class="p1">满259顺丰免邮费</p>
 				<p class="p2"><span>颜色</span><a href="javascript:; " title="蓝色" pvid="42:1439600" attr_id="42"></a></p>
-				<p class="p3"><span>尺寸</span><a href="">S</a><a href="">M</a><a href=""></a></p>
+				<p class="p3"><span>尺寸</span><a href="" value="S">S</a><a href="" value="M">M</a><a href=""></a></p>
 				<p class="p4"><span>数量</span><select name="" disabled="disabled">
-					<option value="请先选择尺码"></option>
+					<option value="请先选择尺码">请先选择尺码</option>
 				</select>
-				<select name="number" id="number">
+				<select name="number" id="number" value="1">
 					<option>1</option>
 					<option>2</option>
 					<option>3</option>
@@ -280,7 +294,8 @@
 				</select>
 				</p>
 				<div class="add">
-					<a href="">添加到购物车</a>
+					
+					<a href="#" onclick="return false;" class="addToCart">添加到购物车</a>
 					<a href="">收藏商品</a>
 				</div>
 				
@@ -291,7 +306,14 @@
 				
 			</div>
 			<div class="glass-right">
-				
+				<h3>同类热门商品</h3>
+				<ul>
+					<li><a href=""><img src="image/detail/s_165(2).jpg"/>翻领呢大衣</a><b>￥629</b></li>
+					<li><a href=""><img src="image/detail/s_165.jpg"/>翻领呢大衣</a><b>￥629</b></li>
+					<li><a href=""><img src="image/detail/s_165(2).jpg"/>翻领呢大衣</a><b>￥629</b></li>
+					<li><a href=""><img src="image/detail/s_165.jpg"/>翻领呢大衣</a><b>￥629</b></li>
+				</ul>
+				<p><i class="i1">&lt;</i><i class="i2">&gt;</i></p>
 			</div>
 		</div>
 		
@@ -301,8 +323,7 @@
 		
 		
 		
-		
-		
+	
 	<script src="js/detail.js"></script>
 	</body>
 </html>
