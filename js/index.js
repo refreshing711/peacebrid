@@ -223,4 +223,55 @@ new Slide($("#main-slide5"), [
 	{"img":"image/004.jpg", "title":"标题4", "href":"http://www.1000phone.com"}
 ], 1000, 400, 2, 3000, "left", 40).init();
 
+
+//固定栏
+	$(".fixed ul li:eq(0)").mouseenter(function(){
+		$(this).css("background","#fff")
+		$(this).children().children("span").css("color","#cd0000")
+		$(this).children().children("i").css({
+			"background-position":"0px -37px"
+		})
+	})
+	$(".fixed ul li:eq(0)").mouseleave(function(){
+		$(this).css("background","#cd0000")
+		$(this).children().children("span").css("color","#fff")
+		$(this).children().children("i").css({
+			"background-position":"0px 0px"
+		})
+	})
+
+	$(".fixed ul li:eq(2)").mouseenter(function(){
+		$(this).css("background","#fff")
+		$(this).children().children("span").css("color","#cd0000")
+		$(this).children().children("i").css({
+			"background-position":"-74px -37px"
+		})
+	})
+	$(".fixed ul li:eq(2)").mouseleave(function(){
+		$(this).css("background","#cd0000")
+		$(this).children().children("span").css("color","#fff")
+		$(this).children().children("i").css({
+			"background-position":"-74px 0px"
+		})
+	})
+	
+	$(".fixed ul li:eq(3)").mouseenter(function(){
+		$(this).css("background","#fff")
+		$(this).children().children("span").css("color","#cd0000")
+		$(this).children().children("i").css({
+			"background-position":"-113px -37px"
+		})
+	})
+	$(".fixed ul li:eq(3)").mouseleave(function(){
+		$(this).css("background","#cd0000")
+		$(this).children().children("span").css("color","#fff")
+		$(this).children().children("i").css({
+			"background-position":"-113px 0px"
+		})
+	})
+	
+	$(".fixed ul li:eq(3)").click(function(){
+		$('html').animate({"scrollTop":0},5000);
+	})
+
 }

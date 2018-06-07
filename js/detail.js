@@ -100,7 +100,7 @@ $(function(){
 	loadCart();
 	
 	$("#buy").click(function(){
-	//	location.href="shopcart.html";
+		location.href="shopcart.html";
 	})
 	
 	$(".good .add .addToCart").click(function(e){
@@ -270,6 +270,7 @@ $(function(){
 		
 		
 		
+		
 
 		
 	
@@ -290,8 +291,81 @@ $(function(){
 	$(".glass-right .i2").click(function(){
 //			$(this).parent().siblings("ul").children().animate({
 //				"top":0
-//			})
+			})
+	
+	
+	
+	
+	$(".main-center .tab1 .ul-img li").mouseenter(function(){
+		$(this).children().children().eq(1).css("display","block")
 	})
+	$(".main-center .tab1 .ul-img li").mouseleave(function(){
+		$(this).children().children().eq(1).css("display","none")
+	})
+	
+	
+	$(".main-center  .main-tab li").click(function(){
+		var ind=$(this).index()
+		$(this).removeClass("slected").eq(ind).addClass("selected");
+		$(".main-center .tab").fadeOut().eq(ind).fadeIn()
+//		console.log($(this).parent().siblings())
+//		$(this).parent().removeClass("checked").eq(ind).addClass("checked");
+		
+	})
+	
+	
+	
+	//固定栏
+	$(".fixed ul li:eq(0)").mouseenter(function(){
+		$(this).css("background","#fff")
+		$(this).children().children("span").css("color","#cd0000")
+		$(this).children().children("i").css({
+			"background-position":"0px -37px"
+		})
+	})
+	$(".fixed ul li:eq(0)").mouseleave(function(){
+		$(this).css("background","#cd0000")
+		$(this).children().children("span").css("color","#fff")
+		$(this).children().children("i").css({
+			"background-position":"0px 0px"
+		})
+	})
+
+	$(".fixed ul li:eq(2)").mouseenter(function(){
+		$(this).css("background","#fff")
+		$(this).children().children("span").css("color","#cd0000")
+		$(this).children().children("i").css({
+			"background-position":"-74px -37px"
+		})
+	})
+	$(".fixed ul li:eq(2)").mouseleave(function(){
+		$(this).css("background","#cd0000")
+		$(this).children().children("span").css("color","#fff")
+		$(this).children().children("i").css({
+			"background-position":"-74px 0px"
+		})
+	})
+	
+	$(".fixed ul li:eq(3)").mouseenter(function(){
+		$(this).css("background","#fff")
+		$(this).children().children("span").css("color","#cd0000")
+		$(this).children().children("i").css({
+			"background-position":"-113px -37px"
+		})
+	})
+	$(".fixed ul li:eq(3)").mouseleave(function(){
+		$(this).css("background","#cd0000")
+		$(this).children().children("span").css("color","#fff")
+		$(this).children().children("i").css({
+			"background-position":"-113px 0px"
+		})
+	})
+	
+	$(".fixed ul li:eq(3)").click(function(){
+		$('html').animate({"scrollTop":0},5000);
+	})
+
+
 	
 	
 

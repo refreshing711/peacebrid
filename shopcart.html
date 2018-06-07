@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="css/shopcar.min.css" />
-		<script src="js/shopcar.js"></script>
+		<link rel="stylesheet" href="css/shopcart.min.css" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		
 	</head>
 	
 	<body>
@@ -14,12 +16,13 @@
 				<div >
 					<a href="">登录</a>
 					<a href="">注册</a>
-					<span>我的购物袋(0)</span>
+					<span id="buy">我的购物袋(0)</span>
 				</div>
 			</div>
 		</div>
 		<div class="shop-mainbg">
 			<div class="shop-main">
+				
 				<div class="shop-main-top">
 					<div class="main-left">
 						<i>1</i>
@@ -33,39 +36,55 @@
 					<div class="main-right">
 						<i>3</i>
 						<span>支付订单</span>
-
 					</div>
 				</div>
 				
-				<div class="cartList">
+				
+				
+				
+			<div class="cartList">
 			<ul class="cartHead">
-				<li>缩略图</li>
-				<li>品名</li>
-				<li>单价</li>
+				<li></li>
+				<li>商品名称</li>
+				<li>编号</li>
+				<li>魔法币</li>
+				<li>商品信息</li>
 				<li>数量</li>
+				<li>专柜价</li>
+				<li>直购优惠</li>
+				<li>售价</li>
 				<li>小计</li>
 				<li>操作</li>
 			</ul>
 			<!--<ul class="goodInfo" data-good-id="sp1">
-				<li><img src="img/1.jpg" /></li>
-				<li>测试</li>
-				<li>30</li>
-				<li class="num">
-					<a href="javascript:;" class="minus">-</a>
+				<li><img src="" alt="" /></li>
+				<li>商品名称</li>
+				<li>A6aa102</li>
+				<li>629</li>
+				<li><a href="javascript: ;" class=minus>-</a>
 					<input type="text" name="" id="" value="2" />
-					<a href="javascript:;" class="plus">+</a>
+				<a href="javascript:;" class="plus">+</a>
 				</li>
+				
+				<li>蓝色</li>
+				<li>s</li>
+				<li>zhuangui</li>
+				<li>shoujia</li>
+				<li>629</li>
 				<li class="total">60</li>
 				<li><a href="javascript:;" class="del">删除</a></li>
+				
 			</ul>-->
 			
-		</div>
-				
-				<div class="blank">
+			<div class="blank">
 					<img src="image/shopcar/empty.png" alt="" />
 					<a href="index.html"></a>
 				<!--您的购物车空空如也~~,赶紧去购物吧！-->
 			</div>
+			
+		</div>
+				
+				
 			
 			
 			
@@ -87,6 +106,8 @@
 		
 		
 		
-		
+<script src="js/shopcart.js"></script>	
+
+
 	</body>
 </html>
